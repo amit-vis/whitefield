@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  --dark-blue: #222831;
+  --turquoise: #76ABAE;
+  --white: #EEE;
+  --blue: #0057FF;
+  --black: #000;
+  --purple: #7469B6;
+  --pink: #FFE6E6;
+  --inter: "Inter", sans-serif;
+}
+
+.sign-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, var(--dark-blue) 50%, var(--turquoise) 50%);
+}
+.logo-div{
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logo-div:hover{
+    cursor: pointer;
+}
+.logo{
+    width: 4rem;
+}
+.kyndo{
+    color: var(--turquoise);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.main-form {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup{
+    width: 30%;
+    height: 85%;
+    width: 30vw;
+    height: fit-content;
+    padding: 2rem 3rem;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--inter);
+}
+.heading{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+.sign-form {
+    width: 100%;
+}
+.input-box{
+    width: 100%;
+    font-size: 1rem;
+    padding: .5rem;
+    padding-left: 0;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.534);
+    outline: none;
+    font-family: var(--inter)
+}
+.t{
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--black);
+}
+.email,.password,.re-password{
+    margin-top: 1.5rem;
+}
+.sign-up-button{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid black;
+    margin-top: 2rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    color: var(--dark-blue);
+    border: 2px solid #EEE;
+    background: transparent;
+    font-family: var(--inter);
+    font-weight: 600;
+    font-size: .95rem;
+    border-color: var(--black);
+}
+.sign-up-button:hover {
+    background: var(--dark-blue);
+    border-color: var(--dark-blue);
+    color: var(--turquoise);
+    cursor: pointer;
+}
+.link{
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-top: .75rem;
+    color: var(--blue);
+    text-align: center;
+}
+
+.link-pass {
+    margin-top: .25rem;
+}
+
+
+/* media */
+
+@media (max-width: 1280px) {
+    .signup {
+        width: 35%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .signup {
+        transform: scale(1.4);
+        width: 45%;
+    }
+}
+
+@media (max-width: 1024px) and (max-height: 600px) {
+    .signup {
+        transform: scale(0.75);
+        width: 45%;
+    }
+}
+
+@media (max-width: 854px) {
+    .signup {
+        width: 55%;
+    }
+}
+
+@media (max-width: 768px) {
+    .signup {
+        transform: scale(1.3);
+    }
+}
+
+@media (max-width: 540px) {
+    .signup {
+        transform: scale(0.9);
+        width: 80%;
+        margin-top: 2rem;
+    }
+    .kyndo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 539px) {
+    .signup {
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 376px) {
+    .signup {
+        width: 100%;
+        padding: 2rem;
+    }
+    .logo-div {
+        padding-left: 1rem;
+    }
+    .logo {
+        width: 2rem;
+    }
+}
